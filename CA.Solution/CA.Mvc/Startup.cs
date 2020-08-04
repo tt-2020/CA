@@ -13,6 +13,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Ca.Infra.Data.Context;
+using CA.Infra.IoC;
 
 namespace CA.Mvc
 {
@@ -40,6 +41,8 @@ namespace CA.Mvc
             {
                 options.UseSqlServer(Configuration.GetConnectionString("UniversityDBConnection"));
             });
+
+            RegisterServices(services);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -71,6 +74,11 @@ namespace CA.Mvc
                     pattern: "{controller=Home}/{action=Index}/{id?}");
                 endpoints.MapRazorPages();
             });
+        }
+
+        private static void RegisterServices(IServiceCollection services)
+        {
+            DependencyContainer.RegisterServices(services);
         }
     }
 }
