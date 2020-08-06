@@ -18,4 +18,8 @@
     <ProjectReference Include="..\CA.Infra.IoC\CA.Infra.IoC.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="wwwroot\images\" />
+  </ItemGroup>
+
 </Project>
