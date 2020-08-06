@@ -21,7 +21,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ca.Infra.Data", "Ca.Infra.D
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CA.Application", "CA.Application\CA.Application.csproj", "{120CB1DC-101F-42A7-91D4-721A3382194A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CA.Infra.IoC", "CA.Infra.IoC\CA.Infra.IoC.csproj", "{C7B2CED8-9FE6-452E-84AA-814F904796C7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CA.Infra.IoC", "CA.Infra.IoC\CA.Infra.IoC.csproj", "{C7B2CED8-9FE6-452E-84AA-814F904796C7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infra.Bus", "Infra.Bus", "{9061590D-329E-4D12-9D8C-53B9CDC0779D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "API", "API", "{0E82F772-CEC6-4CA8-B4BE-B4D7664B5D18}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
