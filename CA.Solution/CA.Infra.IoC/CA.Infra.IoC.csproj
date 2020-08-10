@@ -10,6 +10,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\CA.Application\CA.Application.csproj" />
+    <ProjectReference Include="..\CA.Infra.Bus\CA.Infra.Bus.csproj" />
     <ProjectReference Include="..\Ca.Infra.Data\Ca.Infra.Data.csproj" />
   </ItemGroup>
 
