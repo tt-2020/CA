@@ -14,6 +14,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Ca.Infra.Data.Context;
 using CA.Infra.IoC;
+using MediatR;
 
 namespace CA.Mvc
 {
@@ -41,6 +42,8 @@ namespace CA.Mvc
             {
                 options.UseSqlServer(Configuration.GetConnectionString("UniversityDBConnection"));
             });
+
+            services.AddMediatR(typeof(Startup));
 
             RegisterServices(services);
         }
