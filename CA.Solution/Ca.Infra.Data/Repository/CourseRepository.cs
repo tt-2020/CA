@@ -3,6 +3,7 @@ using CA.Domain.Interfaces;
 using CA.Domain.Models;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 namespace Ca.Infra.Data.Repository
@@ -22,7 +23,7 @@ namespace Ca.Infra.Data.Repository
             _context.SaveChanges();
         }
 
-        public IEnumerable<Course> GetCourses()
+        public IQueryable<Course> GetCourses()
         {
             return _context.Courses;
         }

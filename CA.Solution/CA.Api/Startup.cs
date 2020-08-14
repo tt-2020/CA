@@ -1,4 +1,5 @@
 using Ca.Infra.Data.Context;
+using CA.Api.Configurations;
 using CA.Infra.IoC;
 using MediatR;
 using Microsoft.AspNetCore.Builder;
@@ -35,6 +36,8 @@ namespace CA.Api
             });
 
             services.AddMediatR(typeof(Startup));
+
+            services.RegisterAutoMapper();
 
             RegisterServices(services);
         }

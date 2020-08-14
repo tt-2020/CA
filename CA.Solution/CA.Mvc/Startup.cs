@@ -15,6 +15,7 @@ using Microsoft.Extensions.Hosting;
 using Ca.Infra.Data.Context;
 using CA.Infra.IoC;
 using MediatR;
+using CA.Mvc.Configurations;
 
 namespace CA.Mvc
 {
@@ -44,6 +45,8 @@ namespace CA.Mvc
             });
 
             services.AddMediatR(typeof(Startup));
+
+            services.RegisterAutoMapper();
 
             RegisterServices(services);
         }

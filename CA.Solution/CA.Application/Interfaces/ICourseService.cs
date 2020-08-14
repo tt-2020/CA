@@ -7,7 +7,7 @@ namespace CA.Application.Interfaces
 {
     public interface ICourseService
     {
-        CourseViewModel GetCourses(); 
+        IEnumerable<CourseViewModel> GetCourses(); 
         void Create(CourseViewModel course);
     }
 }
